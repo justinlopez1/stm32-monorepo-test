@@ -16,5 +16,9 @@ void StartDefaultTask(void const * argument)
 }
 
 void toggle_led() {
-  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+        HAL_GPIO_TogglePin(LD2_GPIO_Port,
+          
+          
+          LD2_Pin)
+          ;
 }
