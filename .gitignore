@@ -57,3 +57,11 @@ release
 
 # CMake build folder
 build/
+
+# Cmake super thing
+out/
+
+# These should be in resources/
+firmware/**/Middlewares/
+firmware/**/Drivers/
+

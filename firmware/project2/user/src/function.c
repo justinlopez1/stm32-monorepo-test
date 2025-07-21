@@ -9,9 +9,8 @@ void StartDefaultTask(void const* argument)
 {
     for (;;)
     {
-        // toggle led at some point
         toggle_led();
-        osDelay(200);
+        osDelay(800);
     }
 }
 
