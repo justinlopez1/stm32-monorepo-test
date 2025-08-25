@@ -11,7 +11,7 @@ void StartDefaultTask(void const* argument)
     {
         // toggle led at some point
         toggle_led();
-        osDelay(200);
+        osDelay(500);
     }
 }
 

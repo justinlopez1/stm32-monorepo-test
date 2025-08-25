@@ -131,9 +131,10 @@ extern "C"
  *        which is subject to manufacturing process variations.
  */
 #if !defined(HSI48_VALUE)
-#define HSI48_VALUE                                                                                     \
-    ((uint32_t) 48000000U) /*!< Value of the Internal High Speed oscillator for USB FS/SDMMC/RNG in Hz. \
-                            The real value my vary depending on manufacturing process variations.*/
+#define HSI48_VALUE                                                                              \
+    ((uint32_t) 48000000U) /*!< Value of the Internal High Speed oscillator for USB FS/SDMMC/RNG \
+                            in Hz. The real value my vary depending on manufacturing process     \
+                            variations.*/
 #endif                     /* HSI48_VALUE */
 
 /**
@@ -183,12 +184,12 @@ extern "C"
      * @brief This is the HAL system configuration section
      */
 
-#define VDD_VALUE                3300U /*!< Value of VDD in mv */
-#define TICK_INT_PRIORITY        15U   /*!< tick interrupt priority */
-#define USE_RTOS                 0U
-#define PREFETCH_ENABLE          1U
+#define VDD_VALUE 3300U       /*!< Value of VDD in mv */
+#define TICK_INT_PRIORITY 15U /*!< tick interrupt priority */
+#define USE_RTOS 0U
+#define PREFETCH_ENABLE 1U
 #define INSTRUCTION_CACHE_ENABLE 1U
-#define DATA_CACHE_ENABLE        1U
+#define DATA_CACHE_ENABLE 1U
 
 /* ########################## Assert Selection ############################## */
 /**
@@ -207,40 +208,40 @@ extern "C"
  *        for possible callback identifiers defined in HAL_PPP_CallbackIDTypeDef
  *        for each PPP peripheral).
  */
-#define USE_HAL_ADC_REGISTER_CALLBACKS       0U
-#define USE_HAL_CAN_REGISTER_CALLBACKS       0U
-#define USE_HAL_COMP_REGISTER_CALLBACKS      0U
-#define USE_HAL_CRYP_REGISTER_CALLBACKS      0U
-#define USE_HAL_DAC_REGISTER_CALLBACKS       0U
-#define USE_HAL_DCMI_REGISTER_CALLBACKS      0U
-#define USE_HAL_DFSDM_REGISTER_CALLBACKS     0U
-#define USE_HAL_DMA2D_REGISTER_CALLBACKS     0U
-#define USE_HAL_DSI_REGISTER_CALLBACKS       0U
-#define USE_HAL_GFXMMU_REGISTER_CALLBACKS    0U
-#define USE_HAL_HASH_REGISTER_CALLBACKS      0U
-#define USE_HAL_HCD_REGISTER_CALLBACKS       0U
-#define USE_HAL_I2C_REGISTER_CALLBACKS       0U
-#define USE_HAL_IRDA_REGISTER_CALLBACKS      0U
-#define USE_HAL_LPTIM_REGISTER_CALLBACKS     0U
-#define USE_HAL_LTDC_REGISTER_CALLBACKS      0U
-#define USE_HAL_MMC_REGISTER_CALLBACKS       0U
-#define USE_HAL_OPAMP_REGISTER_CALLBACKS     0U
-#define USE_HAL_OSPI_REGISTER_CALLBACKS      0U
-#define USE_HAL_PCD_REGISTER_CALLBACKS       0U
-#define USE_HAL_QSPI_REGISTER_CALLBACKS      0U
-#define USE_HAL_RNG_REGISTER_CALLBACKS       0U
-#define USE_HAL_RTC_REGISTER_CALLBACKS       0U
-#define USE_HAL_SAI_REGISTER_CALLBACKS       0U
-#define USE_HAL_SD_REGISTER_CALLBACKS        0U
+#define USE_HAL_ADC_REGISTER_CALLBACKS 0U
+#define USE_HAL_CAN_REGISTER_CALLBACKS 0U
+#define USE_HAL_COMP_REGISTER_CALLBACKS 0U
+#define USE_HAL_CRYP_REGISTER_CALLBACKS 0U
+#define USE_HAL_DAC_REGISTER_CALLBACKS 0U
+#define USE_HAL_DCMI_REGISTER_CALLBACKS 0U
+#define USE_HAL_DFSDM_REGISTER_CALLBACKS 0U
+#define USE_HAL_DMA2D_REGISTER_CALLBACKS 0U
+#define USE_HAL_DSI_REGISTER_CALLBACKS 0U
+#define USE_HAL_GFXMMU_REGISTER_CALLBACKS 0U
+#define USE_HAL_HASH_REGISTER_CALLBACKS 0U
+#define USE_HAL_HCD_REGISTER_CALLBACKS 0U
+#define USE_HAL_I2C_REGISTER_CALLBACKS 0U
+#define USE_HAL_IRDA_REGISTER_CALLBACKS 0U
+#define USE_HAL_LPTIM_REGISTER_CALLBACKS 0U
+#define USE_HAL_LTDC_REGISTER_CALLBACKS 0U
+#define USE_HAL_MMC_REGISTER_CALLBACKS 0U
+#define USE_HAL_OPAMP_REGISTER_CALLBACKS 0U
+#define USE_HAL_OSPI_REGISTER_CALLBACKS 0U
+#define USE_HAL_PCD_REGISTER_CALLBACKS 0U
+#define USE_HAL_QSPI_REGISTER_CALLBACKS 0U
+#define USE_HAL_RNG_REGISTER_CALLBACKS 0U
+#define USE_HAL_RTC_REGISTER_CALLBACKS 0U
+#define USE_HAL_SAI_REGISTER_CALLBACKS 0U
+#define USE_HAL_SD_REGISTER_CALLBACKS 0U
 #define USE_HAL_SMARTCARD_REGISTER_CALLBACKS 0U
-#define USE_HAL_SMBUS_REGISTER_CALLBACKS     0U
-#define USE_HAL_SPI_REGISTER_CALLBACKS       0U
-#define USE_HAL_SWPMI_REGISTER_CALLBACKS     0U
-#define USE_HAL_TIM_REGISTER_CALLBACKS       0U
-#define USE_HAL_TSC_REGISTER_CALLBACKS       0U
-#define USE_HAL_UART_REGISTER_CALLBACKS      0U
-#define USE_HAL_USART_REGISTER_CALLBACKS     0U
-#define USE_HAL_WWDG_REGISTER_CALLBACKS      0U
+#define USE_HAL_SMBUS_REGISTER_CALLBACKS 0U
+#define USE_HAL_SPI_REGISTER_CALLBACKS 0U
+#define USE_HAL_SWPMI_REGISTER_CALLBACKS 0U
+#define USE_HAL_TIM_REGISTER_CALLBACKS 0U
+#define USE_HAL_TSC_REGISTER_CALLBACKS 0U
+#define USE_HAL_UART_REGISTER_CALLBACKS 0U
+#define USE_HAL_USART_REGISTER_CALLBACKS 0U
+#define USE_HAL_WWDG_REGISTER_CALLBACKS 0U
 
     /* ################## SPI peripheral configuration ########################## */
 
