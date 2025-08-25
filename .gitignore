@@ -70,9 +70,17 @@ firmware/**/Drivers/
 **/.settings/
 **/.cproject
 **/.project
+
 # STM32 auto-generated vendor code
 firmware/*/Drivers/
 firmware/*/Middlewares/
+
+# Other thing that it makes that changes by OS and is made when opening ioc i think
+firmware/*/.mxproject
+
+# the useless stuff cubemx makes that we are ignoring
+firmware/*/CubeMX
+
 # Common CMake artifacts
 CMakeCache.txt
 CMakeFiles/
