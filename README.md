@@ -7,7 +7,7 @@
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start (Windows)
 
 1. **Clone this repo**
     ```sh
@@ -51,13 +51,7 @@
     make BUILD_TYPE=Release  # Release build
     ```
 
----
-
-*All projects pull in sources/headers from `../../resources`.*
-
----
-
-## 🛠️ Build & Run
+## Other Notes
 
 - **From firmware subfolder** (`cd firmware/project1`):
 
@@ -66,20 +60,9 @@
     make clean           # Remove build
     make BUILD_TYPE=Release   # Build release
     ```
-
-- **Manual CMake/Ninja**
-    ```sh
-    cmake -G Ninja -Bbuild \
-      -DCMAKE_BUILD_TYPE=Debug \
-      -DCMAKE_TOOLCHAIN_FILE='../../resources/cmake/gcc-arm-none-eabi.cmake'
-    ninja -C build
-    ```
-
 ---
 
-## 🧹 Clang-Format & Pre-commit
-
-- **Install the hook** (from repo root, one-time per clone):
+- **Install the pre-commit hook** (from repo root, one-time per clone):
     ```sh
     pre-commit install
     ```
@@ -104,7 +87,7 @@
 
 ---
 
-## Project Structure
+### Project Structure
 ```sh
 project-folder/
 ├── build/             # Output folder for build artifacts (e.g., .elf, .hex, .bin files). Does not get pushed to repo
@@ -118,30 +101,26 @@ project-folder/
 ```
 ---
 
-## 🧠 VS Code + IntelliSense:
-### Setup
+### 🧠 VS Code + IntelliSense:
 - Open root of repo or open specific subproject
 - Point vscode/cmaketools extension to cmakelists.txt in root of whatever you opened
-### What you get 
-- Have working intellisense for all subprojects at once
-- Use build button in vscode to build binaries for all projects at once
-
+- 
 ---
 
 ## 🖥️ Recommended VS Code Settings
 
-Add something like this to your vscode settings json file with ctrl+shift+p to use an msys2 terminal inside of vscode
+Add something like this to your vscode settings json file to use an msys2 terminal inside of vscode
 ```json
-{
-    "terminal.integrated.profiles.windows": {
+"terminal.integrated.profiles.windows": {
     "MSYS2": {
-	"path": "C:\\msys64\\usr\\bin\\bash.exe",
-	"args": [
-		"--login",
-		"-i"
-	],
-	"env": {
-		"CHERE_INVOKING": "1"
+		"path": "C:\\msys64\\usr\\bin\\bash.exe",
+		"args": [
+			"--login",
+			"-i"
+		],
+		"env": {
+			"CHERE_INVOKING": "1"
+		}
 	}
 }
-}
+```
