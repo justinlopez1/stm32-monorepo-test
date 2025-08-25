@@ -18,7 +18,7 @@ set(CPU_PARAMETERS
 set(STARTUP_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/CubeMX/startup_stm32l476xx.s)
 set(MCU_LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/CubeMX/STM32L476XX_FLASH.ld)
 # ##############################################################################
-set(EXECUTABLE ${CMAKE_PROJECT_NAME})
+set(EXECUTABLE ${SOURCE_DIR_NAME})
 enable_language(C CXX ASM)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
