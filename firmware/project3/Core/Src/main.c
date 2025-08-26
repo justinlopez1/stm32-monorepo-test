@@ -270,7 +270,7 @@ static void MX_GPIO_Init(void)
  * @retval None
  */
 /* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void const *argument)
+__weak void StartDefaultTask(void const *argument)
 {
     /* USER CODE BEGIN 5 */
     /* Infinite loop */
