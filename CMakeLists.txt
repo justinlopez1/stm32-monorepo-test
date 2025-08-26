@@ -5,4 +5,5 @@ project(SolarGatorsSTM32Projects)
 
 add_subdirectory(firmware/project1)
 add_subdirectory(firmware/project2)
+add_subdirectory(firmware/project3)
 # Add more as needed
