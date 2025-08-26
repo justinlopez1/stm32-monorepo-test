@@ -71,7 +71,9 @@ firmware/**/Drivers/
 **/.project
 
 # Other thing that it makes that changes by OS and is made when opening ioc i think
-firmware/*/.mxproject
+.mxproject
+mx.scratch
+
 
 # Common CMake artifacts
 CMakeCache.txt
